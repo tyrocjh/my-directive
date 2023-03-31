@@ -1,0 +1,32 @@
+{
+  "name": "tyro-directive",
+  "version": "0.0.1",
+  "description": "Vue2自定义指令库",
+  "main": "dist/directive.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "homepage": "https://github.com/tyrocjh/my-directive",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyrocjh/my-directive.git"
+  },
+  "keywords": [
+    "自定义指令",
+    "工具库",
+    "前端库",
+    "封装"
+  ],
+  "author": "TyroCCC",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
