@@ -1,4 +1,4 @@
-# 前端工具库
+# Vue 自定义指令库
 
 这是一个使用 webpack 打包的 Vue 自定义指令库。
 
@@ -29,4 +29,42 @@ Vue.use(TyroDirective);
 npm run build // 先webpack打包类库，之后再发布
 npm login // 登录
 npm publish // 发布
+```
+
+## 介绍文档
+
+基于 vue 的自定义指令集合，包含
+
+- 按钮权限控制 v-permission
+- 清空两端空格 v-trim
+- 限制只能输入数字 v-input-number
+
+## v-permission
+
+使用：给按钮加上 v-permission 及权限 code 。（需要配合路由使用 route.meta.btnPermission）
+
+```html
+<template>
+  <el-button v-permission="'BUTTON_ADD'">新增</el-button>
+</template>
+```
+
+## v-trim
+
+使用：给输入框加上 v-trim 。
+
+```html
+<template>
+  <el-input v-trim v-model="value" />
+</template>
+```
+
+## v-input-number
+
+使用：给输入框加上 v-input-number 。
+
+```html
+<template>
+  <el-input v-input-number v-model="value" />
+</template>
 ```
